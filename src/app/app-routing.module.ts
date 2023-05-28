@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { WorklistComponent } from './common/worklist/worklist.component';
+import { WorklistComponent } from './work/worklist/worklist.component';
+import { WorksDetailComponent } from './work/works-detail/works-detail.component';
+import { WorkModule } from './work/work.module';
+import { WorkComponent } from './work/work.component';
 
 const routes: Routes = [
-  { path: "", component: WorklistComponent }
-];
+  { path: "", redirectTo: "work", pathMatch: "full" }
+]
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), WorkModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

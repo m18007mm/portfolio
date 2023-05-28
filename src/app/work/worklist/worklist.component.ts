@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./worklist.component.scss']
 })
 export class WorklistComponent {
-
+  products: any = [1, 2, 3, 4]
 }
