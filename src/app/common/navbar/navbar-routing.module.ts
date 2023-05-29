@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { WorkModule } from './work/work.module';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from 'src/app/about/about.component';
+
 
 //初期ページを/workページにリダイレクトする
 const routes: Routes = [
-  { path: "", redirectTo: "work", pathMatch: "full" },
-  { path: "about", component: AboutComponent }
+  { path: "about", component:AboutComponent }
 ]
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), WorkModule],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

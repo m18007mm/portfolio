@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { WorkComponent } from './work.component';
 
+//パスとコンポーネントを対応させる。pathに応じたcomponentがrouter-outletに出力される
 const routes: Routes = [
   {
     path: "work", component: WorkComponent,
