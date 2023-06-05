@@ -8,10 +8,10 @@ import { WorkComponent } from './work.component';
 //パスとコンポーネントを対応させる。pathに応じたcomponentがrouter-outletに出力される
 const routes: Routes = [
   {
-    path: "work", component: WorkComponent,
+    path: "works", component: WorkComponent,
     children:[
       { path: "", component: WorklistComponent },
-      { path: "detail", component: WorksDetailComponent }
+      { path: ":workId", component: WorksDetailComponent }
     ]
   }
 ]

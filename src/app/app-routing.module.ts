@@ -5,7 +5,7 @@ import { AboutComponent } from './about/about.component';
 
 //初期ページを/workページにリダイレクトする
 const routes: Routes = [
-  { path: "", redirectTo: "work", pathMatch: "full" },
+  { path: "", redirectTo: "works", pathMatch: "full" },
   { path: "about", component: AboutComponent }
 ]
 
