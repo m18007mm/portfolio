@@ -1,19 +1,21 @@
-<div class="text-center py-5">
-    <h1 class="py-5 slideindown-animation">your name</h1>
-    <p class="pb-5 fadein-animation">discription</p>
-</div>
-<div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 ">
-    <div *ngFor="let work of works;let workId = index" class="p-0">
-        <div class="col-sm">
-            <div class="image-container fadein-animation">
-                <a [routerLink]="[workId]">
-                    <img [src]="'./assets/image/sample'+ workId +'.jpg'" class="card-img-top" alt="...">
-                    <div class="overlay">
-                        <div class="overlay-content">
-                            <h2>sample{{workId}}</h2>
+<div class="container-fluid">
+    <div class="text-center py-5">
+        <h1 class="py-5 slideindown-animation">your name</h1>
+        <p class="pb-5 fadein-animation">discription</p>
+    </div>
+    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 ">
+        <div *ngFor="let work of works;let workId = index" class="p-0">
+            <div class="col-sm">
+                <div class="image-container fadein-animation">
+                    <a [routerLink]="[workId]">
+                        <img [src]="'./assets/image/sample'+ workId +'.jpg'" class="card-img-top" alt="...">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h2>sample{{workId}}</h2>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
