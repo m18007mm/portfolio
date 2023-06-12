@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component ,OnInit} from '@angular/core';
+import { works } from 'src/app/works';
 
 @Component({
   selector: 'app-worklist',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./worklist.component.scss']
 })
 export class WorklistComponent {
-  works: any = [1, 2, 3, 4]
+  works: any
+  ngOnInit(){
+    this.works = works
+  }
 }

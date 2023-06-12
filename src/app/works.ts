@@ -14,5 +14,13 @@ export const works = [
     {
         name:"sample3",
         description:"sample3"
+    },
+    {
+        name:"sample4",
+        description:"sample4"
+    },
+    {
+        name:"sample5",
+        description:"sample5"
     }
 ];

@@ -14,7 +14,10 @@ export class WorksDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
-      this.work = works[+params.get("workId")!]
+      this.work = works[+params.get("workId")!];
     })
+  }
+  getImagePath(workName: string): string {
+    return `./assets/image/${workName}.jpg`;
   }
 }
